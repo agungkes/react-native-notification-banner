@@ -137,6 +137,9 @@ public class RNNotificationBannerModule extends ReactContextBaseJavaModule {
       if (duration != 0) {
         alerter.setDuration(duration);
       }
+      
+      alerter.setTitleAppearance(R.style.AlertTextAppearance);
+      alerter.setTextAppearance(R.style.AlertTextAppearance);
 
       alerter.show();
   }
